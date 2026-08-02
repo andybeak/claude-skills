@@ -1,0 +1,5 @@
+{
+  "name": "bug-review",
+  "version": "0.1.0",
+  "description": "Proactive latent-bug-finding audits: cross-reference specs against implementation, fix confirmed bugs via draft PRs, and escalate ambiguous cases to Slack."
+}
