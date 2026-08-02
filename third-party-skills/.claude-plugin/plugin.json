@@ -1,0 +1,5 @@
+{
+  "name": "third-party-skills",
+  "version": "0.1.0",
+  "description": "Vendored reference skills sourced from external docs/toolkits, plus a few personal workflow skills: web-perf auditing, humanizer, systematic debugging, agent-browser, resolve-agent-reviews, playwright, defensive-coding, qa-adverserial-review, bot-cursor."
+}

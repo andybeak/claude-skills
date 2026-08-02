@@ -5,6 +5,7 @@
     "email": "admin@mystery.digital"
   },
   "plugins": [
-    { "name": "plan-manager", "source": "./plan-manager" }
+    { "name": "plan-manager", "source": "./plan-manager" },
+    { "name": "third-party-skills", "source": "./third-party-skills" }
   ]
 }
