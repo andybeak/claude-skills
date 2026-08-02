@@ -5,6 +5,6 @@
     "email": "admin@mystery.digital"
   },
   "plugins": [
-    { "name": "example-plugin", "source": "./example-plugin" }
+    { "name": "plan-manager", "source": "./plan-manager" }
   ]
 }
