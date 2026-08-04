@@ -7,6 +7,7 @@
   "plugins": [
     { "name": "plan-manager", "source": "./plan-manager" },
     { "name": "third-party-skills", "source": "./third-party-skills" },
-    { "name": "bug-review", "source": "./bug-review" }
+    { "name": "bug-review", "source": "./bug-review" },
+    { "name": "prd-manager", "source": "./prd-manager" }
   ]
 }
