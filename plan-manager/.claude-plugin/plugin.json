@@ -1,5 +1,5 @@
 {
   "name": "plan-manager",
-  "version": "0.1.0",
-  "description": "Skills for the full plan lifecycle: reviewing a plan before execution, implementing a phase, and auditing a phase's implementation afterward."
+  "version": "0.2.0",
+  "description": "Skills for the full plan lifecycle: creating a plan from a PRD or chat context, reviewing a plan before execution, implementing a phase, and auditing a phase's implementation afterward."
 }

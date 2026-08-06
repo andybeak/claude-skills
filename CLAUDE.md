@@ -33,7 +33,8 @@ Changes are validated by reading them, not by running a command.
 
 ## Existing plugins
 
-- **`plan-manager`** — full plan lifecycle: `plan-review` (pre-execution review), `plan-builder`
+- **`plan-manager`** — full plan lifecycle: `plan-create` (draft a plan from a PRD or chat
+  context, self-reviewed until ready), `plan-review` (pre-execution review), `plan-builder`
   (implement one phase with scope discipline), `plan-audit` (verify a phase was actually built).
 - **`prd-manager`** — `prd-create`: interview-and-draft a new PRD, self-reviewed against
   `prd-review` until it's ready to hand off. `prd-review`: critique a PRD across ten dimensions
