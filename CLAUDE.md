@@ -18,7 +18,14 @@ Changes are validated by reading them, not by running a command.
   skills/
     <skill-name>/
       SKILL.md                       # frontmatter (name, description, ...) + instructions body
+  commands/
+    <command-name>.md                # frontmatter (description, argument-hint) + prompt body
 ```
+
+Most plugins here are `skills/`. `commands/` is for true slash commands: no auto-trigger
+description matching, no bundled assets — just a canned prompt sent verbatim on `/<command-name>`,
+with `$ARGUMENTS` substituted from whatever follows the command. Use it when the whole "skill" is a
+single instruction applied to context, not a multi-step procedure.
 
 - **`marketplace.json`** is the root index. Every plugin directory must have a matching entry
   `{ "name": "<plugin-name>", "source": "./<plugin-name>" }` or it isn't discoverable.
@@ -47,6 +54,14 @@ Changes are validated by reading them, not by running a command.
   resolve-agent-reviews, playwright, defensive-coding, qa-adverserial-review, bot-cursor). Treat
   these as mostly-external content: preserve their original structure/frontmatter conventions
   rather than normalizing them to match this repo's own plugins.
+- **`thinking-lenses`** — five single-purpose slash commands (`/premortem`, `/steelman`,
+  `/assumptions`, `/secondorder`, `/redteam`) that apply a critical-thinking lens to whatever's
+  currently under discussion. Uses `commands/<name>.md` (see Structure below), not `skills/` — each
+  one is a canned prompt with no auto-trigger logic, not a multi-step skill. Also has one skill,
+  `stress-test`, which chains four of the lenses (assumptions, premortem, red team, second-order —
+  not steelman, which evaluates someone else's argument rather than stress-testing your own plan)
+  into a single synthesized report; use the standalone commands for a quick single-angle check and
+  the skill for a full pre-commit gut-check.
 
 ## Conventions when adding or editing a skill
 

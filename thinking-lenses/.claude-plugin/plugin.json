@@ -1,0 +1,5 @@
+{
+  "name": "thinking-lenses",
+  "version": "0.2.0",
+  "description": "Five slash commands that apply a critical-thinking lens (premortem, steelman, assumptions, second-order effects, red team) to whatever is currently being discussed or planned, plus a stress-test skill that chains four of them into one synthesized report."
+}
