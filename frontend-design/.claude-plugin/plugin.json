@@ -1,0 +1,5 @@
+{
+  "name": "frontend-design",
+  "version": "0.1.0",
+  "description": "A frontend design reviewer agent that judges whether a UI helps the user complete their task, citing modern web principles."
+}

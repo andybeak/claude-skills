@@ -61,6 +61,11 @@ single instruction applied to context, not a multi-step procedure.
 - **`testing`** — `test-writer` subagent (`agents/test-writer.md`): writes and runs spec-driven tests
   using a test pyramid, with a mocking hierarchy, `REGRESSION-GUARD:` markers for bug-fix tests, and
   a 3-attempt stop rule; edits test files only, never production code.
+- **`frontend-design`** — `frontend-design-reviewer` subagent
+  (`agents/frontend-design-reviewer.md`): works from code, screenshots, or Claude in Chrome; asks
+  "what is the user trying to do", judges whether the design helps, and cites a modern web
+  principle (WCAG 2.2, Core Web Vitals, usability, responsive) for every recommendation; report
+  only. Standards sections dated 2026-10-02.
 - **`bug-review`** — `bug-find-latent`: scheduled audit that cross-references specs/contracts
   against the implementation, drafts PR fixes for confirmed bugs, and escalates ambiguous ones.
 - **`third-party-skills`** — vendored/reference skills from external sources plus a few personal

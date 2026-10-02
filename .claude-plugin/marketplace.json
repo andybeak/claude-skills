@@ -12,6 +12,7 @@
     { "name": "thinking-lenses", "source": "./thinking-lenses" },
     { "name": "architecture", "source": "./architecture" },
     { "name": "observability", "source": "./observability" },
-    { "name": "testing", "source": "./testing" }
+    { "name": "testing", "source": "./testing" },
+    { "name": "frontend-design", "source": "./frontend-design" }
   ]
 }
