@@ -9,6 +9,9 @@
     { "name": "third-party-skills", "source": "./third-party-skills" },
     { "name": "bug-review", "source": "./bug-review" },
     { "name": "prd-manager", "source": "./prd-manager" },
-    { "name": "thinking-lenses", "source": "./thinking-lenses" }
+    { "name": "thinking-lenses", "source": "./thinking-lenses" },
+    { "name": "architecture", "source": "./architecture" },
+    { "name": "observability", "source": "./observability" },
+    { "name": "testing", "source": "./testing" }
   ]
 }

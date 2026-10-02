@@ -1,0 +1,5 @@
+{
+  "name": "architecture",
+  "version": "0.1.0",
+  "description": "An architect agent that designs for testability and small, replaceable units of change."
+}

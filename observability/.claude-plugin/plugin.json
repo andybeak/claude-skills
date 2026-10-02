@@ -1,0 +1,5 @@
+{
+  "name": "observability",
+  "version": "0.1.0",
+  "description": "An observability specialist agent that reviews logging and Prometheus-style metrics and recommends improvements."
+}

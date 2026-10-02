@@ -20,6 +20,8 @@ Changes are validated by reading them, not by running a command.
       SKILL.md                       # frontmatter (name, description, ...) + instructions body
   commands/
     <command-name>.md                # frontmatter (description, argument-hint) + prompt body
+  agents/
+    <agent-name>.md                  # frontmatter (name, description, tools, model) + system prompt body
 ```
 
 Most plugins here are `skills/`. `commands/` is for true slash commands: no auto-trigger
@@ -46,7 +48,19 @@ single instruction applied to context, not a multi-step procedure.
 - **`prd-manager`** — `prd-create`: interview-and-draft a new PRD, self-reviewed against
   `prd-review` until it's ready to hand off. `prd-review`: critique a PRD across ten dimensions
   (problem framing, scope, testability, non-functional coverage, UX, traceability, plannability for
-  a phased-plan handoff, test-pyramid handoff) before it goes to a planning agent.
+  a phased-plan handoff, test-pyramid handoff) before it goes to a planning agent. Also ships the
+  `product-manager` subagent (`agents/product-manager.md`): a general product thinking partner that
+  can write PRD files and delegates drafting/critique to the two skills above.
+- **`architecture`** — `architect` subagent (`agents/architect.md`): design/review thinking partner
+  that optimizes for testability and small, replaceable units of change, guards against both
+  tangled and over-fragmented designs, and can write ADRs/design docs but never edits source code.
+- **`observability`** — `observability-specialist` subagent (`agents/observability-specialist.md`):
+  reviews logging and Prometheus/OpenTelemetry-style metrics, recommends additions/removals with
+  the standards' naming and labeling rules baked in (dated 2026-10-02); recommendations only,
+  alerting/dashboards/tracing out of scope.
+- **`testing`** — `test-writer` subagent (`agents/test-writer.md`): writes and runs spec-driven tests
+  using a test pyramid, with a mocking hierarchy, `REGRESSION-GUARD:` markers for bug-fix tests, and
+  a 3-attempt stop rule; edits test files only, never production code.
 - **`bug-review`** — `bug-find-latent`: scheduled audit that cross-references specs/contracts
   against the implementation, drafts PR fixes for confirmed bugs, and escalates ambiguous ones.
 - **`third-party-skills`** — vendored/reference skills from external sources plus a few personal
